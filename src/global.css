@@ -1,0 +1,48 @@
+@import "https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css";
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Hack", monospace;
+}
+
+.ranking-enduro {
+    display: grid;
+    grid-template-columns: 30px 185px 70px repeat(12, 185px);
+}
+
+/* Position marks */
+
+.rank-1st {
+    color: gold;
+    font-weight: 700;
+}
+
+.rank-2nd {
+    color: silver;
+    font-weight: 600;
+}
+
+.rank-3rd {
+    color: #CD7F32;
+    font-weight: 600;
+}
+
+.rank-th {
+    color: #00ff73;
+    font-weight: 600;
+}
+
+.rank-null {
+    color: whitesmoke;
+    font-weight: 900;
+}
+
+.rank-absent {
+    color: red;
+    font-weight: 100;
+}
+
+.rank-withdrew {
+    color: #CC0066;
+    font-weight: 100;
+}
