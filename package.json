@@ -2,7 +2,7 @@
   "name": "sewer-hideout",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://sewergusta.online/",
+  "homepage": "https://sewergusta.online",
   "type": "module",
   "scripts": {
     "dev": "vite",
