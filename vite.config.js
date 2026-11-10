@@ -7,6 +7,6 @@ export default defineConfig({
     tailwindcss(),
     react(),
   ],
-  base: '/newgen-sewer-hideout/',
+  base: '/',
 })
 
