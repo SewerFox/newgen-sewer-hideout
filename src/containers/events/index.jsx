@@ -9,9 +9,9 @@ import Mobile27Logo from "../../assets/misc-event/mobile27.png"
 export function Events() {
     return (
         <div className="flex flex-col items-center">
-            <div className="text-center sm:flex items-center border-b-2 border-b-green-600 m-1.5">
-                <h1 className='text-green-400 text-2xl'>Running event:</h1>
-                <Link className='text-green-200 hover:text-green-300 text-lg' to="/events/enduro1st">STK Enduro Tournament 1º Ed.</Link>
+            <div className="text-center sm:flex items-baseline gap-2 m-1.5">
+                <h1 className='text-green-400 text-2xl'>Running event: </h1>
+                <Link className='text-green-200 hover:text-green-300 text-2xl' to="/events/enduro1st">STK Enduro Tournament 1º Ed.</Link>
             </div>
             <div className="text-center items-center border-b-2 border-b-green-600 m-1.5">
                 <h1 className='text-green-400 text-2xl mb-1.5'>Planned events:</h1>
