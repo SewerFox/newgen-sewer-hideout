@@ -5,7 +5,7 @@ export function NavigationBar() {
         [
             { text: "Homepage", href: "/" },
             { text: "STK events", href: "/events" },
-            { text: "Hall of fame", href: "/hallfame" },
+            { text: "Hall of fame", href: "/halloffame" },
             { text: "STK Konqi servers", href: "/servers" },
             { text: "Bunch of links", href: "/links" },
         ]

@@ -5,6 +5,8 @@ import { Events } from './containers/events'
 import { Enduro1st } from './containers/events/enduro/1ed'
 import { HallOfFame } from './containers/hall_fame'
 import { ErrorScreen } from './containers/error'
+import { ServersList } from './containers/servers'
+import { BunchOfLinks } from './containers/links'
 
 export const router = createHashRouter([
   {
@@ -15,7 +17,9 @@ export const router = createHashRouter([
       { index: true, element: <Home /> },
       { path: "/events", element: <Events /> },
       { path: "/events/enduro1st", element: <Enduro1st /> },
-      { path: "/hallfame", element: <HallOfFame /> },
+      { path: "/halloffame", element: <HallOfFame /> },
+      { path: "/servers", element: <ServersList /> },
+      { path: "/links", element: <BunchOfLinks /> },
     ]
   }
 ]);
