@@ -2,13 +2,13 @@ import { GridBox } from '../../components/grid_box/index'
 
 export function ServersList() {
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center mb-2.5">
             <div className="text-center items-center m-1.5">
                 <h1 className='text-green-400 text-2xl mb-1.5'>STK Konqi servers list</h1>
                 <p className='text-green-200 text-lg lg:pl-20 lg:pr-20 mb-2.5'>The servers use the kimden fork instead of the upstream version, with plans to update his version to the actual git (1.x and Evo branches) code, as the original code hasn't been updated since Feb/2026.</p>
             </div>
-            <div className="text-center items-center m-1.5">
-                <div className='grid gap-16 md:grid-cols-2 xl:grid-cols-3'>
+            <div className="text-center items-center mb-1.5">
+                <div className='grid gap-4  md:grid-cols-2 md:gap-16 xl:grid-cols-3'>
                     <GridBox>
                         <h2 className='text-green-300 font-bold text-xl'>STK Konqi Racing Club</h2>
                         <h3 className='text-green-200 text-md font-bold'>Game mode: Normal Race</h3>

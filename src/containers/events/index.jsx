@@ -13,7 +13,7 @@ export function Events() {
                 <h1 className='text-green-400 text-2xl'>Running event: </h1>
                 <Link className='text-green-200 hover:text-green-300 text-2xl' to="/events/enduro1st">STK Enduro Tournament 1º Ed.</Link>
             </div>
-            <div className="text-center items-center border-b-2 border-b-green-600 m-1.5">
+            <div className="text-center items-center m-1.5">
                 <h1 className='text-green-400 text-2xl mb-1.5'>Planned events:</h1>
                 <div className='grid gap-4 md:grid-cols-2 xl:grid-cols-4'>
                     <GridBoxImage src={EoW2026Logo}>
