@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
 import { GridBoxImage } from '../../components/grid_box/index'
 import { Details } from '../../components/details/index'
-import EoW2026Logo from "../../assets/marathon/2026.png"
-import League1stLogo from "../../assets/league/1ed/racing-logo.png"
-import Enduro2stLogo from "../../assets/enduro/2ed/enduro-logo.png"
-import Mobile27Logo from "../../assets/misc-event/mobile27.png"
+import EoW2026Logo from "../../assets/events/marathon/2026.png"
+import League1stLogo from "../../assets/events/league/1ed/racing-logo.png"
+import Enduro2stLogo from "../../assets/events/enduro/2ed/enduro-logo.png"
+import Mobile27Logo from "../../assets/events/misc-event/mobile27.png"
 
 export function Events() {
     return (

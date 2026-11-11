@@ -1,7 +1,7 @@
 import { HeaderWithImage } from '../../../components/header_with_image/index'
 import { Details } from '../../../components/details/index'
 import { RankingTable } from '../../../components/ranking-tables'
-import Enduro1stLogo from "../../../assets/enduro/1ed/enduro-logo.png"
+import Enduro1stLogo from "../../../assets/events/enduro/1ed/enduro-logo.png"
 
 export function Enduro1st() {
 
