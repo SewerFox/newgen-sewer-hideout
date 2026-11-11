@@ -13,7 +13,13 @@ export function Enduro2nd() {
             </HeaderWithImage>
             <div className='mt-2.5 mb-2.5'>
                 <Details title="0 - Ranking table">
-                    <RankingTable csvUrl={"https://about:blank"}>
+                    <h2 className=' text-center font-bold text-xl mb-2.5'>⚠️ Under construction ⚠️</h2>
+                    <RankingTable
+                        csvUrl={"about:blank"}
+                        tableStyle={"ranking-cols"} cols={15}
+                        allowSorting={true} allowDropping={0}
+                        scoringSystem={[0, 12, 10, 8, 6, 5, 4, 3, 2, 1]}
+                    >
                         <p>#</p>
                         <p>Player</p>
                         <p>Points</p>
@@ -34,7 +40,7 @@ export function Enduro2nd() {
 
                 <Details title="1 - Calendar">
                     <p>All rounds will be started on a <b>Saturday, at 16:00 UTC</b> (converted times to your region in: <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=STK+Enduro+Tournament%27s+races+start+time&iso=20261010T16&p1=1440" target="_blank">Time zone converter</a>).</p>
-                    <p><b>Will be defined soon</b></p> 
+                    <p><b>Will be defined soon</b></p>
                 </Details >
 
                 <Details title="2 - Scoring system">

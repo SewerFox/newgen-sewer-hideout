@@ -5,9 +5,18 @@
     --font-sans: "Hack", monospace;
 }
 
-.ranking-enduro {
+:root {
+  --num-cols: 0;
+}
+
+.ranking-cols {
     display: grid;
-    grid-template-columns: 30px 185px 70px repeat(12, 185px);
+    grid-template-columns: 30px 185px 70px repeat(var(--num-cols), 185px);
+}
+
+.ranking-single {
+    display: grid;
+    grid-template-columns: 30px 185px 70px;
 }
 
 /* Position marks */

@@ -1,6 +1,6 @@
 import { HeaderWithImage } from '../../../components/header_with_image/index'
 import { Details } from '../../../components/details/index'
-import { RankingTable } from '../../../components/ranking-tables'
+import { RankingTable } from '../../../components/ranking-tables/index'
 import Enduro1stLogo from "../../../assets/events/enduro/1ed/enduro-logo.png"
 
 export function Enduro1st() {
@@ -13,7 +13,12 @@ export function Enduro1st() {
             </HeaderWithImage>
             <div className='mt-2.5 mb-2.5'>
                 <Details title="0 - Ranking table">
-                    <RankingTable csvUrl={"https://raw.githubusercontent.com/SewerFox/sewer-hideout/refs/heads/sewer-site/results-assets/enduro/results/enduro-1st.csv"}>
+                    <RankingTable
+                        csvUrl={"https://raw.githubusercontent.com/SewerFox/sewer-hideout/refs/heads/sewer-site/results-assets/enduro/results/enduro-1st.csv"}
+                        tableStyle={"ranking-cols"}  cols={15}
+                        allowSorting={true} allowDropping={0}
+                        scoringSystem={[0, 10, 8, 6, 5, 4, 3, 2, 1]}
+                    >
                         <p>#</p>
                         <p>Player</p>
                         <p>Points</p>

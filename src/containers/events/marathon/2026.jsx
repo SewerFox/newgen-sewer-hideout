@@ -14,7 +14,17 @@ export function EoW2026() {
             </HeaderWithImage>
             <div className='mt-2.5 mb-2.5'>
                 <Details title="0 - Table ">
-                    <h2 className='font-bold text-xl mb-2.5'>⚠️ Under construction ⚠️</h2>
+                    <h2 className=' text-center font-bold text-xl mb-2.5'>⚠️ Under construction ⚠️</h2>
+                    <RankingTable
+                        csvUrl={"about:blank"} 
+                        tableStyle={"ranking-single"}
+                        allowSorting={true} allowDropping={0}
+                        scoringSystem={[0, 12, 10, 8, 6, 5, 4, 3, 2, 1]}
+                    >
+                        <p>#</p>
+                        <p>Player</p>
+                        <p>Racing Time</p>
+                    </RankingTable>
                 </Details>
 
                 <Details title="1 - Rules">

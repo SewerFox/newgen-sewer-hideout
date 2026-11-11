@@ -13,7 +13,19 @@ export function MobileGP() {
             </HeaderWithImage>
             <div className='mt-2.5 mb-2.5'>
                 <Details title="0 - Showdown overview">
-                    <h2 className='font-bold text-xl mb-2.5'>⚠️ Under construction ⚠️</h2>
+                    <h2 className=' text-center font-bold text-xl mb-2.5'>⚠️ Under construction ⚠️</h2>
+                    <RankingTable
+                        csvUrl={"about:blank"}
+                        tableStyle={"ranking-cols"} cols={5}
+                        allowSorting={true} allowDropping={0}
+                        scoringSystem={[0, 12, 10, 8, 6, 5, 4, 3, 2, 1]}
+                    >
+                        <p>#</p>
+                        <p>Player</p>
+                        <p>Points</p>
+                        <p>GP1</p>
+                        <p>GP2</p>
+                    </RankingTable>
                 </Details>
 
                 <Details title="1 - Rules and calendar">
