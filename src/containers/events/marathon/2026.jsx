@@ -16,10 +16,10 @@ export function EoW2026() {
                 <Details title="0 - Table ">
                     <h2 className=' text-center font-bold text-xl mb-2.5'>⚠️ Under construction ⚠️</h2>
                     <RankingTable
-                        csvUrl={"about:blank"} 
+                        csvUrl={"https://raw.githubusercontent.com/SewerFox/newgen-sewer-hideout/39ff15a63385bada6fd3a0e3fc7ebc5f00c708ec/src/assets/results/eow26-results.csv"} 
                         tableStyle={"ranking-single"}
-                        allowSorting={true} allowDropping={0}
-                        scoringSystem={[0, 12, 10, 8, 6, 5, 4, 3, 2, 1]}
+                        allowSorting={false} allowDropping={0}
+                        scoringSystem={[0]}
                     >
                         <p>#</p>
                         <p>Player</p>

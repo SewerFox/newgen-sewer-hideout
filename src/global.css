@@ -11,12 +11,12 @@
 
 .ranking-cols {
     display: grid;
-    grid-template-columns: 30px 185px 70px repeat(var(--num-cols), 185px);
+    grid-template-columns: 32px 192px 64px repeat(var(--num-cols), 192px);
 }
 
 .ranking-single {
     display: grid;
-    grid-template-columns: 30px 185px 70px;
+    grid-template-columns: 32px 128px 108px;
 }
 
 /* Position marks */

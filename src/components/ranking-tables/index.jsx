@@ -108,11 +108,12 @@ export function RankingTable({ children, csvUrl, tableStyle, cols, allowSorting,
             position === 5) return "rank-th"
         return ""
     }
-
+    const pontuation = (tableStyle === "ranking-single") ? 1 : resultsTable[1].length -1
+ 
     for (let i = 1; i < resultsTable.length; i++) {
         table.push(<p className={getPositionClass(i)}>{i}</p>)
         table.push(<p className={getPositionClass(i)}>{resultsTable[i][0]}</p>)
-        table.push(<p className={getPositionClass(i)}>{resultsTable[i][13]}</p>)
+        table.push(<p className={getPositionClass(i)}>{resultsTable[i][pontuation]}</p>)
         for (let j = 1; j < children.length - 2; j++) {
             table.push(<p className={getCellClass(resultsTable[i][j])}>{resultsTable[i][j]}</p>)
         }
