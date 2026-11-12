@@ -108,7 +108,7 @@ export function RankingTable({ children, csvUrl, tableStyle, cols, allowSorting,
             position === 5) return "rank-th"
         return ""
     }
-    const pontuation = (tableStyle === "ranking-single") ? 1 : resultsTable[1].length -1
+    const pontuation = (tableStyle === "ranking-single") ? 1 : cols - 2
  
     for (let i = 1; i < resultsTable.length; i++) {
         table.push(<p className={getPositionClass(i)}>{i}</p>)
