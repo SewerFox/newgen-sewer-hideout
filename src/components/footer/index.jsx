@@ -1,4 +1,10 @@
-export function Footer() {
+export function Footer() {    
+    const mySTKChats = // My Social Medias
+        [
+            { text: "Discord server", href: "https://discord.gg/9A5XvTZs8" },
+            { text: "Matrix space", href: "https://matrix.to/#/#supertuxkart_b-side_space:matrix.org" },
+            { text: "The servers have a text and voice-call bridge", href: "about:blank" },
+        ]
     const socialMedia = // My Social Medias
         [
             { text: "My GitHub main page", href: "https://github.com/SewerFox" },
@@ -33,7 +39,18 @@ export function Footer() {
         border-t-2 border-t-green-600 pb-1.5">
             <h3 className="text-green-500 text-left text-3xl mt-2" >Some sites</h3>
             <div className="flex flex-col md:flex-row items-start text-left justify-around gap-10">
-                <div className="md:flex md:flex-col md:justify-between">
+                <div className="sm:flex sm:flex-col sm:justify-between">
+                    <p>My STK chat channels</p>
+                    <div className="sm:flex sm:flex-col ">
+                        {mySTKChats.map((button, index) => (
+                            <a key={index} className="flex text-lime-500 hover:text-lime-600 text-left text-lg md:text-sms" href={button.href} target="_blank">
+                                {button.text}
+                            </a>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="sm:flex sm:flex-col sm:justify-between">
                     <p>My Social Medias</p>
                     <div className="sm:flex sm:flex-col ">
                         {socialMedia.map((button, index) => (
