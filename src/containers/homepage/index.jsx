@@ -12,7 +12,7 @@ export function Home() {
             </HeaderWithImage>
             <TextBox>
                 <p>Hi, I'm Gusta, aka Gustanator or Sewer Fox (formerly CreamBR).<br />I'm a Brazilian player and developer of SuperTuxKart (making code mainly for mobile version), and also a <span className='line-through'>furry</span>.<br />I decided to create this site to talk about my events and my servers, and also I added a <Link className='text-green-200 hover:text-green-300' to="/links">link list</Link> for the players access various places with STK content.</p> <br />
-                <p>This site is a EVEN BIGGER evolution of my old site (now it's a <a className='text-green-200 hover:text-green-300' href="https://gustanator.github.io/stk-yapira/">public archive</a>), using React + TailwindCSS and some vanilla JS code (used in the ranking tables, that is semi-automatic: I just need to update a <a className='text-green-200 hover:text-green-300' href="https://github.com/SewerFox/sewer-hideout/blob/sewer-site/results-assets/enduro/results/enduro-1st.csv">.csv file</a>). </p> <br />
+                <p>This site is a EVEN BIGGER evolution of my old site (now it's a <a className='text-green-200 hover:text-green-300' href="https://gustanator.github.io/stk-yapira/">public archive</a>), using React + TailwindCSS and some vanilla JS code (used in the ranking tables, that is semi-automatic: I just need to update some .csv files). </p> <br />
                 <p><i>I hope you like my site :3</i></p>
             </TextBox>
         </>
