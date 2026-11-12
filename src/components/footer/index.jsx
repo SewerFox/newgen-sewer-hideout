@@ -1,9 +1,10 @@
-export function Footer() {    
+export function Footer() {
     const mySTKChats = // My Social Medias
         [
             { text: "Discord server", href: "https://discord.gg/9A5XvTZs8" },
             { text: "Matrix space", href: "https://matrix.to/#/#supertuxkart_b-side_space:matrix.org" },
-            { text: "The servers have a text and voice-call bridge", href: "about:blank" },
+            { text: "The channels have text", href: "about:blank" },
+            { text: "and voice-call bridges", href: "about:blank" },
         ]
     const socialMedia = // My Social Medias
         [
@@ -16,7 +17,7 @@ export function Footer() {
         [
             { text: "Official website", href: "https://supertuxkart.net" },
             { text: "STK Official Forum", href: "https://forum.supertuxkart.net" },
-            { text: "An unofficial wiki", href: "https://luffah.xyz/wiki/supertuxkart/" },
+            { text: "STK Patreon", href: "https://members.supertuxkart.net" },
         ]
 
     const KDE = // KDE Project
