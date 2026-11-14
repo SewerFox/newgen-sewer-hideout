@@ -3,8 +3,6 @@ export function Footer() {
         [
             { text: "Discord server", href: "https://discord.gg/9A5XvTZs8" },
             { text: "Matrix space", href: "https://matrix.to/#/#supertuxkart_b-side_space:matrix.org" },
-            { text: "The channels have text", href: "about:blank" },
-            { text: "and voice-call bridges", href: "about:blank" },
         ]
     const socialMedia = // My Social Medias
         [
@@ -48,6 +46,7 @@ export function Footer() {
                                 {button.text}
                             </a>
                         ))}
+                        <p className="flex text-lime-500 text-left text-lg md:text-sms">The channels have text<br />and voice-call bridges</p>
                     </div>
                 </div>
 

@@ -76,7 +76,7 @@ export function Enduro1st() {
                             </a>
                         </li>
                         <li className='text-green-200'>
-                            <a className='font-bold' >
+                            <a className='font-bold' href="" target='_blank'>
                                 November 14: <span className='text-green-300 hover:text-green-400'>Antediluvian Abyss 20 laps – Subsea 12 laps (add-on).</span>
                             </a>
                         </li>
