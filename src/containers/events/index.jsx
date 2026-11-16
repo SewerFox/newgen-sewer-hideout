@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { GridBoxImage } from '../../components/grid_box/index'
 import { Details } from '../../components/details/index'
-import EoW2026Logo from "../../assets/events/marathon/2026.png"
 import League1stLogo from "../../assets/events/league/1ed/racing-logo.png"
 import Enduro2stLogo from "../../assets/events/enduro/2ed/enduro-logo.png"
 import Mobile27Logo from "../../assets/events/misc-event/mobile27.png"
@@ -10,17 +9,16 @@ export function Events() {
     return (
         <div className="flex flex-col items-center">
             <div className="text-center sm:flex items-baseline gap-2 m-1.5">
-                <h1 className='text-green-400 text-2xl'>Running event: </h1>
+                <h1 className='text-green-400 text-2xl'>Next event: </h1>
+                <Link className='text-red-200 hover:text-red-300 text-2xl' to="/events/endyear2026">STK End-of-Year Matathon 2026</Link>
+            </div>
+            <div className="text-center sm:flex items-baseline gap-2 m-1.5">
+                <h1 className='text-green-400 text-2xl'>Finished right now event: </h1>
                 <Link className='text-green-200 hover:text-green-300 text-2xl' to="/events/enduro1st">STK Enduro Tournament 1º Ed.</Link>
             </div>
             <div className="text-center items-center m-1.5">
                 <h1 className='text-green-400 text-2xl mb-1.5'>Planned events:</h1>
                 <div className='grid gap-4 md:grid-cols-2 xl:grid-cols-4'>
-                    <GridBoxImage src={EoW2026Logo}>
-                        <h2 className='text-green-300 font-bold text-xl'>STK End-of-2026 Marathon</h2>
-                        <h3 className='text-green-200 text-lg'>Planned date: December 12 at 16:00 UTC</h3>
-                        <p className='text-sm'>Planned to be a 90 (or 75)-laps race in some snowy track (maybe Snow Peak)</p>
-                    </GridBoxImage>
                     <GridBoxImage src={League1stLogo}>
                         <h2 className='text-green-300 font-bold text-xl'>STK Racing League 1st ed.</h2>
                         <h3 className='text-green-200 text-lg'>Planned date: February-April of 2027</h3>
@@ -42,7 +40,8 @@ export function Events() {
             </div>
             <div className="text-center items-center m-1.5">
                 <Details title="Old events:">
-                    <p className='text-green-300 text-lg'>For more events, take a look in these links list:</p>
+                    <Link className='text-green-200 hover:text-green-300 text-lg' to="/events/enduro1st">STK Enduro Tournament 1º Ed.</Link>
+                    <p className='text-green-300 text-lg'>For older events, take a look in these links list:</p>
                     <Link className='text-white hover:text-green-400 text-md mb-1.5' to="/links">Click here!</Link>
                 </Details>
             </div>
