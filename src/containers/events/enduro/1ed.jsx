@@ -9,13 +9,14 @@ export function Enduro1st() {
         <>
             <HeaderWithImage src={Enduro1stLogo} border={true}>
                 <h1 className='text-green-400 text-2xl'>Welcome to the 1st Edition of STK Enduro tournament!</h1>
-                <p> This tournament will be played between <b>October and November of 2026</b>, starting October 3 and ending November 14.<br /> It's being organized by Gusta, with some support by FabianF. <br /> The races are happening in the server <i>Konqi's Endurance Resort</i>. <br /> You don't need to register to participate in this event. <br /> Just enter in the dedicated server on the scheduled days (see calendar below) and have fun :) <br /> Also, please make sure to read the rules below.</p>
+                <p> This tournament was played between <b>October and November of 2026</b>, and started October 3 and ended November 14.<br /> Was organized by Gusta, with some support by FabianF. <br /> The races happened in the server <i>Konqi's Endurance Resort</i>. <br /> You didn't need to register to participate in this event. <br /> Just enter in the dedicated server on the scheduled days (see calendar below) and have fun :) <br /> Also, please make sure to read the rules below.</p>
+                <h1 className='text-green-400'>Congratulations to 1st Edition of STK Enduro tournament champion <span className="text-lime-400 font-bold">FabianF</span>, with 61 points!</h1>
             </HeaderWithImage>
             <div className='mt-2.5 mb-2.5'>
                 <Details title="0 - Ranking table">
                     <RankingTable
                         csvUrl={"https://raw.githubusercontent.com/SewerFox/sewer-hideout/refs/heads/sewer-site/results-assets/enduro/results/enduro-1st.csv"}
-                        tableStyle={"ranking-cols"}  cols={15}
+                        tableStyle={"ranking-cols"} cols={16}
                         allowSorting={true} allowDropping={0}
                         scoringSystem={[0, 10, 8, 6, 5, 4, 3, 2, 1]}
                     >
@@ -34,7 +35,16 @@ export function Enduro1st() {
                         <p>Green Valley (cancelled)</p>
                         <p>Antediluvian Abyss</p>
                         <p>Subsea</p>
+                        <p>Added points</p>
                     </RankingTable>
+                    <div className='w-11/12 m-auto mt-3 mb-3 overflow-x-auto border-2 border-green-600 rounded-md p-2'>
+                        <h4 className='font-bold text-lg'>Notes:</h4>
+                        <p> - Added 3 points for ElTuneado009, as he was leading when game crashed in lap 6 (Hacienda)</p>
+                        <p> - Tux Tollway race has 16 laps instead of 20 for balance the race time</p>
+                        <p> - Green Valley race was cancelled due to lags caused by track versions mismatch between several players and server</p>
+                        <p> - Subsea race has 20 laps instead of 12 because the admin put the wrong number of laps</p>
+                        <p> - Added 7 points for ElTuneado009, as he was leading when his connection dropped in lap 14 (Subsea)</p>
+                    </div>
                 </Details>
 
                 <Details title="1 - Calendar">
@@ -76,7 +86,7 @@ export function Enduro1st() {
                             </a>
                         </li>
                         <li className='text-green-200'>
-                            <a className='font-bold' href="" target='_blank'>
+                            <a className='font-bold' href="https://www.youtube.com/live/5dc3Lod7yYA?si=BTDRGz8z3DDPoal5" target='_blank'>
                                 November 14: <span className='text-green-300 hover:text-green-400'>Antediluvian Abyss 20 laps – Subsea 12 laps (add-on).</span>
                             </a>
                         </li>
@@ -95,7 +105,10 @@ export function Enduro1st() {
                         <p>(7th - +2 points)</p>
                         <p>(8th - +1 points)</p>
                     </div>
-                    <p>We won't add points for fastest laps.</p>
+                    <p>If you have <b>a disconnection for game or network issues</b>, you can receive a <b>part of the points</b> based on this equation:</p>
+                    <p><i>Points for the position you had when disconnecting * (Your completed laps / 20 [number of laps of a entire race])</i></p>
+                    <p className="text-green-200">Example: I was the 3rd in lap 15/20 when I lost my connection:<br />6 * (15/20) = 6 * 0.75 = 4.5 points</p>
+                    <p className="mt-2 font-bold">We won't add points for fastest laps.</p>
                 </Details>
 
                 <Details title="3 - Rules">

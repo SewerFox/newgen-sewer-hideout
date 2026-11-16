@@ -28,7 +28,8 @@ export function RankingTable({ children, csvUrl, tableStyle, cols, allowSorting,
                                     playerResults[j] = scoringSystem[3]
                                 } else if (playerResults[j] === "---" ||
                                     playerResults[j] === "absent" ||
-                                    playerResults[j] === "withdrew") {
+                                    playerResults[j] === "withdrew" ||
+                                    playerResults[j] === "disconnection") {
                                     playerResults[j] = scoringSystem[0]
                                 } else {
                                     for (let k = 4; k <= scoringSystem.length - 1; k++) {
@@ -58,6 +59,7 @@ export function RankingTable({ children, csvUrl, tableStyle, cols, allowSorting,
                                         return acc + 0
                                     } else return acc + entry
                                 }, 0)
+                                sumOfPoints += Number(playerResults[13])
                                 data[i].push(sumOfPoints)
                             } else {
                                 let sumOfPoints = playerResults.reduce((acc, entry) => {
@@ -65,6 +67,7 @@ export function RankingTable({ children, csvUrl, tableStyle, cols, allowSorting,
                                         return acc + 0
                                     } else return acc + entry
                                 }, 0)
+                                sumOfPoints += Number(playerResults[13])
                                 data[i].push(sumOfPoints)
                             }
                         }
@@ -72,7 +75,7 @@ export function RankingTable({ children, csvUrl, tableStyle, cols, allowSorting,
                         // Sorting the table
                         let formatedTable
 
-                        if (allowSorting) { formatedTable = data.sort((a, b) => b[13] - a[13]) } else { formatedTable = data }
+                        if (allowSorting) { formatedTable = data.sort((a, b) => b[cols - 2] - a[cols - 2]) } else { formatedTable = data }
 
                         // Sending results for post-processing
                         setResults(formatedTable)
@@ -96,7 +99,8 @@ export function RankingTable({ children, csvUrl, tableStyle, cols, allowSorting,
             text === "5th") return "rank-th"
         if (text === "---") return "rank-null"
         if (text === "absent") return "rank-absent"
-        if (text === "withdrew") return "rank-withdrew"
+        if (text === "withdrew" ||
+            text === "disconnection") return "rank-withdrew"
         return ""
     }
 
@@ -109,14 +113,15 @@ export function RankingTable({ children, csvUrl, tableStyle, cols, allowSorting,
         return ""
     }
     const pontuation = (tableStyle === "ranking-single") ? 1 : cols - 2
- 
-    for (let i = 1; i < resultsTable.length; i++) {
+
+    for (let i = 1; i < resultsTable.length - 1; i++) {
         table.push(<p className={getPositionClass(i)}>{i}</p>)
         table.push(<p className={getPositionClass(i)}>{resultsTable[i][0]}</p>)
         table.push(<p className={getPositionClass(i)}>{resultsTable[i][pontuation]}</p>)
-        for (let j = 1; j < children.length - 2; j++) {
+        for (let j = 1; j < children.length - 3; j++) {
             table.push(<p className={getCellClass(resultsTable[i][j])}>{resultsTable[i][j]}</p>)
         }
+        table.push(<p>{resultsTable[i][13]}</p>)
     }
 
     document.querySelector(':root').style.setProperty('--num-cols', cols - 3);
