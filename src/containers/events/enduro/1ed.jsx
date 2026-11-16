@@ -15,7 +15,7 @@ export function Enduro1st() {
             <div className='mt-2.5 mb-2.5'>
                 <Details title="0 - Ranking table">
                     <RankingTable
-                        csvUrl={"https://raw.githubusercontent.com/SewerFox/sewer-hideout/refs/heads/sewer-site/results-assets/enduro/results/enduro-1st.csv"}
+                        csvUrl={"https://raw.githubusercontent.com/SewerFox/newgen-sewer-hideout/refs/heads/main/src/assets/results/enduro-1st.csv"}
                         tableStyle={"ranking-cols"} cols={16}
                         allowSorting={true} allowDropping={0}
                         scoringSystem={[0, 10, 8, 6, 5, 4, 3, 2, 1]}
