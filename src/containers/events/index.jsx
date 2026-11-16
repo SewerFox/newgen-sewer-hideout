@@ -18,7 +18,7 @@ export function Events() {
             </div>
             <div className="text-center items-center m-1.5">
                 <h1 className='text-green-400 text-2xl mb-1.5'>Planned events:</h1>
-                <div className='grid gap-4 md:grid-cols-2 xl:grid-cols-4'>
+                <div className='grid gap-4 md:grid-cols-2 xl:grid-cols-3'>
                     <GridBoxImage src={League1stLogo}>
                         <h2 className='text-green-300 font-bold text-xl'>STK Racing League 1st ed.</h2>
                         <h3 className='text-green-200 text-lg'>Planned date: February-April of 2027</h3>
