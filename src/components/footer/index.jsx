@@ -1,3 +1,5 @@
+import { } from "https://keepandroidopen.org/banner.js?lang=en&hidebutton=off&size=minimal"
+
 export function Footer() {
     const mySTKChats = // My Social Medias
         [
@@ -31,7 +33,6 @@ export function Footer() {
             { text: "BattleBots", href: "https://battlebots.com/" },
             { text: "Formula One", href: "https://www.formula1.com/" },
         ]
-
 
     return (
         <div className="flex flex-col gap-2.5 md:items-center justify-between text-2xl
