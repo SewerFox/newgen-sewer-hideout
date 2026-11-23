@@ -30,18 +30,18 @@ export function Enduro1st() {
                         <p>Hacienda</p>
                         <p>Shifting Sands</p>
                         <p>Tux Tollway</p>
-                        <p>Green Valley (cancelled)</p>
+                        <p className="text-gray-400 font-extrabold">Green Valley (cancelled)</p>
                         <p>Antediluvian Abyss</p>
                         <p>Subsea</p>
                         <p>Added points</p>
                     </RankingTable>
                     <div className='w-11/12 m-auto mt-3 mb-3 overflow-x-auto border-2 border-green-600 rounded-md p-2'>
                         <h4 className='font-bold text-lg'>Notes:</h4>
-                        <p> - Added 3 points for ElTuneado009, as he was leading when game crashed in lap 6 (Hacienda)</p>
+                        <p> - Was added 3 points for ElTuneado009 (in the Hacienda race), as he was leading when game crashed in lap 6</p>
                         <p> - Tux Tollway race has 16 laps instead of 20 for balance the race time</p>
                         <p> - Green Valley race was cancelled due to lags caused by track versions mismatch between several players and server</p>
                         <p> - Subsea race has 20 laps instead of 12 because the admin put the wrong number of laps</p>
-                        <p> - Added 7 points for ElTuneado009, as he was leading when his connection dropped in lap 14 (Subsea)</p>
+                        <p> - Was added 7 points for ElTuneado009 (in the Subsea race), as he was leading when his connection dropped in lap 14</p>
                     </div>
                 </Details>
 
