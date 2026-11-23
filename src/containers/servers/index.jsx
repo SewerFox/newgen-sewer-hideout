@@ -1,4 +1,4 @@
-import { GridBox } from '../../components/grid_box/index'
+import { GridBox } from '../../components'
 
 export function ServersList() {
     return (

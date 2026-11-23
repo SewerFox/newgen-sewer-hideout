@@ -1,4 +1,4 @@
-import { TextBox } from '../../components/textbox/index'
+import { TextBox } from '../../components'
 
 export function BunchOfLinks() {
     return (

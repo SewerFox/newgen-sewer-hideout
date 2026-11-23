@@ -1,5 +1,5 @@
 import { useRouteError, isRouteErrorResponse } from 'react-router-dom'
-import { BackgroundContainer } from '../../components/background/index'
+import { BackgroundContainer } from '../../components'
 
 export function ErrorScreen() {
     const error = useRouteError();

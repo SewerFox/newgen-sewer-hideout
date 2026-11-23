@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import { HeaderWithImage } from '../../components/header_with_image/index'
-import { TextBox } from '../../components/textbox/index'
+
+import { HeaderWithImage, TextBox} from '../../components'
 import Nine from '../../assets/fox/nine.png'
 
 export function Home() {

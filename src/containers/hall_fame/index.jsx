@@ -1,4 +1,4 @@
-import { Details } from "../../components/details/index"
+import { Details } from "../../components"
 
 export function HallOfFame() {
     return (

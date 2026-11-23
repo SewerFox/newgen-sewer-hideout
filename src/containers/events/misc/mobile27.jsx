@@ -1,6 +1,4 @@
-import { HeaderWithImage } from '../../../components/header_with_image/index'
-import { Details } from '../../../components/details/index'
-import { RankingTable } from '../../../components/ranking-tables'
+import { HeaderWithImage, Details, RankingTable } from '../../../components'
 import MobileGPLogo from "../../../assets/events/misc-event/mobile27.png"
 
 export function MobileGP() {

@@ -1,6 +1,4 @@
-import { HeaderWithImage } from '../../../components/header_with_image/index'
-import { Details } from '../../../components/details/index'
-import { RankingTable } from '../../../components/ranking-tables'
+import { HeaderWithImage, Details, RankingTable } from '../../../components'
 import EoW2026Logo from "../../../assets/events/marathon/2026.png"
 
 export function EoW2026() {

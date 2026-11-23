@@ -1,6 +1,4 @@
-import { HeaderWithImage } from '../../../components/header_with_image/index'
-import { Details } from '../../../components/details/index'
-import { RankingTable } from '../../../components/ranking-tables'
+import { HeaderWithImage, Details } from '../../../components'
 import Race1stLogo from "../../../assets/events/league/1ed/racing-logo.png"
 
 export function RacingLeague1st() {
