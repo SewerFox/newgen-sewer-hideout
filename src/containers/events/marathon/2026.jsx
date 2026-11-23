@@ -14,7 +14,6 @@ export function EoW2026() {
             </HeaderWithImage>
             <div className='mt-2.5 mb-2.5'>
                 <Details title="0 - Table ">
-                    <h2 className=' text-center font-bold text-xl mb-2.5'>⚠️ Under construction ⚠️</h2>
                     <RankingTable
                         csvUrl={"https://raw.githubusercontent.com/SewerFox/newgen-sewer-hideout/39ff15a63385bada6fd3a0e3fc7ebc5f00c708ec/src/assets/results/eow26-results.csv"} 
                         tableStyle={"ranking-single"}
@@ -30,7 +29,7 @@ export function EoW2026() {
                 <Details title="1 - Rules">
                     <h3 className='font-bold'>1.1 Schedule</h3>
                     <ul>
-                        <li className='text-red-200'>The will start at 16:00 UTC (converted times to your region in: <a className='text-red-400 hover:text-red-500' href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=STK+Marathon%27s+race+start+time&iso=20261010T16&p1=1440" target="_blank">Time zone converter</a>).</li>
+                        <li className='text-red-200'>The event will start at 16:00 UTC (converted times to your region in: <a className='text-red-400 hover:text-red-500' href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=STK+Marathon%27s+race+start+time&iso=20261010T16&p1=1440" target="_blank">Time zone converter</a>).</li>
                         <li className='text-red-200'> The race will start at most 10 minutes after the scheduled time (to wait for more players), and we can host one more race, if the players want this</li>
                     </ul>
 
