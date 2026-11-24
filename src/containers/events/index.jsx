@@ -10,11 +10,7 @@ export function Events() {
         <div className="flex flex-col items-center">
             <div className="text-center sm:flex items-baseline gap-2 m-1.5">
                 <h1 className='text-green-400 text-2xl'>Next event: </h1>
-                <Link className='text-red-200 hover:text-red-300 text-2xl' to="/events/endyear2026">STK End-of-Year Matathon 2026</Link>
-            </div>
-            <div className="text-center sm:flex items-baseline gap-2 m-1.5">
-                <h1 className='text-green-400 text-2xl'>Finished right now event: </h1>
-                <Link className='text-green-200 hover:text-green-300 text-2xl' to="/events/enduro1st">STK Enduro Tournament 1º Ed.</Link>
+                <Link className='text-red-200 hover:text-red-300 text-2xl' to="/events/endyear2026">STK End-of-Year Marathon 2026</Link>
             </div>
             <div className="text-center items-center m-1.5">
                 <h1 className='text-green-400 text-2xl mb-1.5'>Planned events:</h1>
@@ -22,27 +18,27 @@ export function Events() {
                     <GridBoxImage src={League1stLogo}>
                         <h2 className='text-green-300 font-bold text-xl'>STK Racing League 1st ed.</h2>
                         <h3 className='text-green-200 text-lg'>Planned date: February-April of 2027</h3>
-                        <p className='text-sm'>Planned to be a event with a brand new championship style (inside the STK universe) <br />
-                            <span className='text-white font-extralight'>Little spoiler: Will be inspirated in BattleBots Pro League (2026) championship style</span>
+                        <p className='text-sm'>Planned to be a event with a brand new championship style (inside the STK community) <br />
+                            <span className='text-white font-extralight'>Little spoiler: Will be slightly inspirated in BattleBots Pro League (2026) championship style</span>
                         </p>
                     </GridBoxImage>
                     <GridBoxImage src={Enduro2stLogo}>
                         <h2 className='text-green-300 font-bold text-xl'>STK Enduro Tournament 2nd edition</h2>
                         <h3 className='text-green-200 text-lg'>Planned date: Mid-2027</h3>
-                        <p className='text-sm'>Will be the continuation of the 1st edition, with several rule changes (I guess only 10% of the last rules will be maintained)</p>
+                        <p className='text-sm'>Will be the continuation of the 1st edition, with several rule changes (I guess only 10% of the 1st Ed. rules will be kept)</p>
                     </GridBoxImage>
                     <GridBoxImage src={Mobile27Logo}>
                         <h2 className='text-green-300 font-bold text-xl'>STK Mobile Showdown</h2>
                         <h3 className='text-green-200 text-lg'>Planned date: Maybe Nov 2027</h3>
-                        <p className='text-sm'>Planned to be a series of GPs exclusive for mobile players</p>
+                        <p className='text-sm'>Planned to be a series of GPs exclusive for mobile players<br /> No much info for now.</p>
                     </GridBoxImage>
                 </div>
             </div>
             <div className="text-center items-center m-1.5">
                 <Details title="Old events:">
                     <Link className='text-green-200 hover:text-green-300 text-lg' to="/events/enduro1st">STK Enduro Tournament 1º Ed.</Link>
-                    <p className='text-green-300 text-lg'>For older events, take a look in these links list:</p>
-                    <Link className='text-white hover:text-green-400 text-md mb-1.5' to="/links">Click here!</Link>
+                    <p className='text-green-300 text-lg'>For older events, take a look here:</p>
+                    <a className='text-white hover:text-green-400 text-md mb-1.5' href="https://gustanator.github.io/stk-yapira/events/index.html">Click here!</a>
                 </Details>
             </div>
         </div>
