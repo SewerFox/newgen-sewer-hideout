@@ -97,10 +97,11 @@ export function RacingLeague1st() {
                             </div>
                         </div>
                     </div>
+
                     <div className='mb-5'>
                         <h2 className='font-bold text-xl mb-2.5 text-center'>Finals round</h2>
-                        <div className='flex gap-4'>
-                            <div className='w-fit border-2 border-gray-300 rounded-md p-2.5 flex flex-col items-center justify-center'>
+                        <div className='flex flex-col md:flex-row gap-4'>
+                            <div className='md:w-fit border-2 border-gray-300 rounded-md p-2.5 flex flex-col items-center justify-center'>
                                 <a href='' className="font-bold text-center">Wild Cards Showdown - 00/00/2027</a>
                                 <RankingTable
                                     csvUrl={"https://raw.githubusercontent.com/SewerFox/newgen-sewer-hideout/refs/heads/main/src/assets/results/racingleague1st/wild-cards.csv"}
@@ -114,7 +115,7 @@ export function RacingLeague1st() {
                                 </RankingTable>
                             </div>
 
-                            <div className='w-fit border-2 border-green-600 rounded-md p-2.5 flex gap-12 items-center text-center'>
+                            <div className='md:w-fit overflow-x-auto border-2 border-green-600 rounded-md p-2.5 flex gap-12 items-center text-center'>
                                 {console.log(FinalsJSON)}
                                 {/* Quarterfinals */}
                                 <section className="flex flex-col gap-3">
@@ -270,11 +271,11 @@ export function RacingLeague1st() {
                     </div>
                 </Details>
 
-                <Details title="2 - Rules">
+                <Details title="1 - Rules">
                     <h2 className='font-bold text-xl mb-2.5'>⚠️ Under construction ⚠️</h2>
                 </Details>
 
-                <Details title="3 - Suggestions">
+                <Details title="2 - Suggestions">
                     <p>If you want to give us suggestions for this event (and futures events also), send an email here: <a className='text-yellow-400 hover:text-yellow-500' href='mailto:sewerfox456@proton.me' target="_blank">sewerfox456@proton.me</a></p>
                 </Details>
             </div>
