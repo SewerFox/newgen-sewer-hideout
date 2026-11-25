@@ -129,7 +129,7 @@ export function RankingTable({ children, csvUrl, tableStyle, cols, allowSorting,
     document.querySelector(':root').style.setProperty('--num-cols', cols - 3);
 
     return (
-        <div className='w-fit max-w-11/12 m-auto mt-3 mb-3 overflow-x-auto border-2 border-green-600 rounded-md'>
+        <div className='w-fit max-w-11/12 m-auto mt-3 mb-3 overflow-x-auto border-2 border-green-600 rounded-md text-left'>
             <div className={`w-fit bg-green-600 text-sm ${tableStyle}`}>
                 {children}
             </div>
