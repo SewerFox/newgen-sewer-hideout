@@ -16,9 +16,7 @@ import {
 
 export const router = createHashRouter([
   {
-    path: "/",
-    element: <Main />,
-    errorElement: <ErrorScreen />,
+    path: "/",  element: <Main />, errorElement: <ErrorScreen />,
     children: [
       { index: true, element: <Home /> },
       { path: "/events", element: <Events /> },
