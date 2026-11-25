@@ -1,0 +1,30 @@
+{
+    "quarterfinals": {
+        "number1": "Nine",
+        "number2": "Amy",
+        "number3": "Ricard",
+        "number4": "Vespaaaa",
+        "number5": "Seven",
+        "number6": "Shadow",
+        "number7": "Silver",
+        "number8": "AssDuck"
+    },
+    "semifinals": {
+        "semi18": "Nine",
+        "semi27": "Amy",
+        "semi36": "Shadow",
+        "semi45": "Seven"
+    },
+    "finals": {
+        "finalist1": "Nine",
+        "finalist2": "Shadow",
+        "thirdcontest1": "Seven",
+        "thirdcontest2": "Amy"
+    },
+    "podium": {
+        "champion": "Nine",
+        "runnerup": "Shadow",
+        "third": "Amy",
+        "fourth": "Seven"
+    }
+}
