@@ -53,10 +53,10 @@ export function RankingTable({ children, csvUrl, tableStyle, cols, allowSorting,
 
                                 let droppedPlayerResults = [playerName, ...playerEarnedPoints, ...playerBadPositions]
 
-                                for (let i = 0; i <= allowDropping; i++) 
+                                for (let i = 0; i <= allowDropping; i++)
                                     droppedPlayerResults.pop()
 
-                                let sumOfPoints = droppedPlayerResults.reduce((entry, acc) => {
+                                let sumOfPoints = droppedPlayerResults.reduce((acc, entry) => {
                                     if (typeof (entry) != "number") return acc
                                     else return acc + entry
                                 }, 0)
@@ -64,11 +64,11 @@ export function RankingTable({ children, csvUrl, tableStyle, cols, allowSorting,
                                 sumOfPoints += Number(playerResults[1])
                                 data[i].push(sumOfPoints)
                             } else {
-                                let sumOfPoints = playerResults.reduce((entry, acc) => {
+                                let sumOfPoints = playerResults.reduce((acc, entry) => {
                                     if (typeof (entry) != "number") return acc
                                     else return acc + entry
                                 }, 0)
-                                
+
                                 sumOfPoints += Number(playerResults[1])
                                 data[i].push(sumOfPoints)
                             }
