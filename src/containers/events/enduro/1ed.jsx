@@ -1,5 +1,6 @@
 import { HeaderWithImage, Details, RankingTable } from '../../../components'
 import Enduro1stLogo from "../../../assets/events/enduro/1ed/enduro-logo.png"
+import VideoLinks from "../../../assets/events/video-links.json"
 
 export function Enduro1st() {
 
@@ -52,17 +53,17 @@ export function Enduro1st() {
                     <p>All these races will be played in <b>normal</b> direction!</p>
                     <ul>
                         <li className='text-green-200'>
-                            <a className='font-bold' href="https://youtu.be/CUHQCjFhCQk?is=xAsZk5PTLyl-lxDg">
+                            <a className='font-bold' href={VideoLinks.enduro1st.number1}>
                                 October 3: <span className='text-green-300 hover:text-green-400'>STK Enterprise 20 laps – Cornfield Crossing 20 laps;</span>
                             </a>
                         </li>
                         <li className='text-green-200'>
-                            <a className='font-bold' href="https://youtu.be/RP91QqEhtuI?is=Qo38G5ml4ksHpN8s">
+                            <a className='font-bold' href={VideoLinks.enduro1st.number2}>
                                 October 10: <span className='text-green-300 hover:text-green-400'>Lost Chasm 20 laps – Imminent Cold Effects 20 laps (both add-ons);</span>
                             </a>
                         </li>
                         <li className='text-green-200'>
-                            <a className='font-bold' href="https://www.youtube.com/live/W7m7Liwa-Ww">
+                            <a className='font-bold' href={VideoLinks.enduro1st.number3}>
                                 October 17: <span className='text-green-300 hover:text-green-400'>Northern Resort 20 laps – Supertux Raceway 20 laps (add-on).</span>
                             </a>
                         </li>
@@ -72,19 +73,19 @@ export function Enduro1st() {
                     <p>All these races will be played in <b>reverse</b> direction!</p>
                     <ul>
                         <li className='text-green-200'>
-                            <a className='font-bold' href="https://www.youtube.com/watch?v=IJTgrvLNS3Y">
+                            <a className='font-bold' href={VideoLinks.enduro1st.number4}>
                                 October 31: <span className='text-green-300 hover:text-green-400'>Hacienda 20 laps – Shifting Sands 20 laps;</span>
                             </a>
                         </li>
                         <li className='text-green-200'>
-                            <a className='font-bold' href="https://youtu.be/_d2OaWxxw7U?is=cfMWTYGNFpjj0uWq">
+                            <a className='font-bold' href={VideoLinks.enduro1st.number5}>
                                 November 7: <span className='text-green-300 hover:text-green-400'>Tux Tollway 20 laps – Green Valley 20 laps (was cancelled for these reasons: </span>
                             </a>
                             <a className='font-extrabold text-green-300 hover:text-green-400' href="https://forum.supertuxkart.net/thread-437-post-1319.html#pid1319" target='_blank'>click here
                             </a>
                         </li>
                         <li className='text-green-200'>
-                            <a className='font-bold' href="https://www.youtube.com/live/5dc3Lod7yYA?si=BTDRGz8z3DDPoal5" target='_blank'>
+                            <a className='font-bold' href={VideoLinks.enduro1st.number6} target='_blank'>
                                 November 14: <span className='text-green-300 hover:text-green-400'>Antediluvian Abyss 20 laps – Subsea 12 laps (add-on).</span>
                             </a>
                         </li>

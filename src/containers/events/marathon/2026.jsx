@@ -1,5 +1,6 @@
 import { HeaderWithImage, Details, RankingTable } from '../../../components'
 import EoW2026Logo from "../../../assets/events/marathon/2026.png"
+import VideoLinks from "../../../assets/events/video-links.json"
 
 export function EoW2026() {
 
@@ -13,7 +14,7 @@ export function EoW2026() {
             <div className='mt-2.5 mb-2.5'>
                 <Details title="0 - Table ">
                     <RankingTable
-                        csvUrl={"https://raw.githubusercontent.com/SewerFox/newgen-sewer-hideout/refs/heads/main/src/assets/events/marathon/eow26-results.csv"} 
+                        csvUrl={"https://raw.githubusercontent.com/SewerFox/newgen-sewer-hideout/refs/heads/main/src/assets/events/marathon/eow26-results.csv"}
                         tableStyle={"ranking-single"}
                         allowSorting={false} allowDropping={0}
                         scoringSystem={[0]}
@@ -21,6 +22,9 @@ export function EoW2026() {
                         <p>#</p>
                         <p>Player</p>
                         <p>Racing Time</p>
+                        <a className='text-green-300 hover:text-green-400' href={VideoLinks.endyear2026} target='_blank'>
+                            Click here for watch the recording
+                        </a>
                     </RankingTable>
                 </Details>
 

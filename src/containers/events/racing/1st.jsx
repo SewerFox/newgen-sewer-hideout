@@ -1,6 +1,7 @@
 import { HeaderWithImage, Details, RankingTable } from '../../../components'
 import Race1stLogo from "../../../assets/events/league/1ed/racing-logo.png"
 import FinalsJSON from "../../../assets/events/league/1ed/results/finals-round.json"
+import VideoLinks from "../../../assets/events/video-links.json"
 
 export function RacingLeague1st() {
 
@@ -27,7 +28,7 @@ export function RacingLeague1st() {
                                     <p>Points</p>
                                 </RankingTable>
                                 <section className='w-11/12 md:w-11/12 m-auto mt-3 mb-3 overflow-x-auto border-2 border-green-600 rounded-md p-0.5 text-sm'>
-                                    <a href=''><b>GROUP A</b> - 00/00/2027</a>
+                                    <a href={VideoLinks.raceleague1st.groupA} className='text-green-300 hover:text-green-400'><b>GROUP A</b> - 00/00/2027</a>
                                 </section>
                             </div>
 
@@ -44,7 +45,7 @@ export function RacingLeague1st() {
                                     <p>Points</p>
                                 </RankingTable>
                                 <section className='w-11/12 m-auto mt-3 mb-3 overflow-x-auto border-2 border-green-600 rounded-md p-0.5 text-sm'>
-                                    <a href=''><b>GROUP B</b> - 00/00/2027</a>
+                                    <a href={VideoLinks.raceleague1st.groupB} className='text-green-300 hover:text-green-400'><b>GROUP B</b> - 00/00/2027</a>
                                 </section>
                             </div>
 
@@ -61,7 +62,7 @@ export function RacingLeague1st() {
                                     <p>Points</p>
                                 </RankingTable>
                                 <section className='w-11/12 m-auto mt-3 mb-3 overflow-x-auto border-2 border-green-600 rounded-md p-0.5 text-sm'>
-                                    <a href=''><b>GROUP C</b> - 00/00/2027</a>
+                                    <a href={VideoLinks.raceleague1st.groupC} className='text-green-300 hover:text-green-400'><b>GROUP C</b> - 00/00/2027</a>
                                 </section>
                             </div>
 
@@ -78,7 +79,7 @@ export function RacingLeague1st() {
                                     <p>Points</p>
                                 </RankingTable>
                                 <section className='w-11/12 m-auto mt-3 mb-3 overflow-x-auto border-2 border-green-600 rounded-md p-0.5 text-sm'>
-                                    <a href=''><b>GROUP D</b> - 00/00/2027</a>
+                                    <a href={VideoLinks.raceleague1st.groupD} className='text-green-300 hover:text-green-400'><b>GROUP D</b> - 00/00/2027</a>
                                 </section>
                             </div>
 
@@ -95,7 +96,7 @@ export function RacingLeague1st() {
                                     <p>Points</p>
                                 </RankingTable>
                                 <section className='w-11/12 m-auto mt-3 mb-3 overflow-x-auto border-2 border-green-600 rounded-md p-0.5 text-sm'>
-                                    <a href=''><b>GROUP E</b> - 00/00/2027</a>
+                                    <a href={VideoLinks.raceleague1st.groupE} className='text-green-300 hover:text-green-400'><b>GROUP E</b> - 00/00/2027</a>
                                 </section>
                             </div>
 
@@ -112,7 +113,7 @@ export function RacingLeague1st() {
                                     <p>Points</p>
                                 </RankingTable>
                                 <section className='w-11/12 m-auto mt-3 mb-3 overflow-x-auto border-2 border-green-600 rounded-md p-0.5 text-sm'>
-                                    <a href=''><b>GROUP F</b> - 00/00/2027</a>
+                                    <a href={VideoLinks.raceleague1st.groupF} className='text-green-300 hover:text-green-400'><b>GROUP F</b> - 00/00/2027</a>
                                 </section>
                             </div>
                         </div>
@@ -122,7 +123,7 @@ export function RacingLeague1st() {
                         <h2 className='font-bold text-xl mb-2.5 text-center'>Finals round</h2>
                         <div className='flex flex-col md:flex-row gap-4'>
                             <div className='md:w-fit border-2 border-gray-300 rounded-md p-2.5 flex flex-col items-center justify-center'>
-                                <a href='' className="font-bold text-center">Wild Cards Showdown - 00/00/2027</a>
+                                <a href={VideoLinks.raceleague1st.wildCards} className='text-green-300 hover:text-green-400 font-bold text-center'>Wild Cards Showdown - 00/00/2027</a>
                                 <RankingTable
                                     csvUrl={"https://raw.githubusercontent.com/SewerFox/newgen-sewer-hideout/refs/heads/main/src/assets/events/league/1ed/results/wild-cards.csv"}
                                     tableStyle={"ranking-single"}
@@ -139,7 +140,7 @@ export function RacingLeague1st() {
                                 {console.log(FinalsJSON)}
                                 {/* Quarterfinals */}
                                 <section className="flex flex-col gap-3">
-                                    <a href='' className="font-bold">Quarterfinals 00/00/2027</a>
+                                    <a href={VideoLinks.raceleague1st.quarter1} className='text-green-300 hover:text-green-400 font-bold text-center text-sm'>Quarterfinals(1) <br /> 00/00/2027</a>
 
                                     <div className='w-full border-2 border-green-600 rounded-md p-0.5'>
                                         <div className={`${(FinalsJSON.quarterfinals.number1 === FinalsJSON.semifinals.semi18)
@@ -169,6 +170,9 @@ export function RacingLeague1st() {
                                             5 - {FinalsJSON.quarterfinals.number5}
                                         </div>
                                     </div>
+
+                                    <a href={VideoLinks.raceleague1st.quarter2} className='text-green-300 hover:text-green-400 font-bold text-center text-sm'>Quarterfinals(2) <br /> 00/00/2027</a>
+
                                     <div className='w-full border-2 border-green-600 rounded-md p-0.5'>
                                         <div className={`${(FinalsJSON.quarterfinals.number3 === FinalsJSON.semifinals.semi36)
                                             ? "font-black text-green-300"
@@ -201,7 +205,7 @@ export function RacingLeague1st() {
 
                                 {/* Semifinals */}
                                 <section className="flex flex-col gap-3">
-                                    <a href='' className="font-bold">Semifinals 00/00/2027</a>
+                                    <a href={VideoLinks.raceleague1st.semis} className='text-green-300 hover:text-green-400 font-bold text-center'>Semifinals 00/00/2027</a>
 
                                     <div className='w-full border-2 border-green-600 rounded-md p-0.5'>
                                         <div className={`${(FinalsJSON.semifinals.semi18 === FinalsJSON.finals.finalist1)
@@ -235,7 +239,7 @@ export function RacingLeague1st() {
 
                                 {/* Grand Final */}
                                 <section className="flex flex-col gap-3">
-                                    <a href='' className="font-black">Grand Final 00/00/2027</a>
+                                    <a href={VideoLinks.raceleague1st.final} className='text-green-300 hover:text-green-400 font-black text-center'>Grand Final 00/00/2027</a>
 
                                     <div className='w-full border-2 border-green-600 rounded-md p-0.5'>
                                         <div className={`${(FinalsJSON.finals.finalist1 === FinalsJSON.podium.champion)
@@ -251,7 +255,7 @@ export function RacingLeague1st() {
 
                                 {/* 3rd place contest */}
                                 <section className="flex flex-col gap-3">
-                                    <a href='' className="font-bold">3rd place <br />contest  00/00/2027</a>
+                                    <a href={VideoLinks.raceleague1st.third} className='text-green-300 hover:text-green-400 font-black text-center'>3rd place <br />contest  00/00/2027</a>
 
                                     <div className='w-full border-2 border-green-600 rounded-md p-0.5'>
                                         <div className={`${(FinalsJSON.finals.thirdcontest1 === FinalsJSON.podium.third)
@@ -266,7 +270,7 @@ export function RacingLeague1st() {
                                 </section>
                             </div>
 
-                            <div className='w-full border-2 rank-1st rounded-md p-2.5  flex flex-col items-center text-center'>
+                            <div className='w-full border-2 rank-1st rounded-md p-2.5 flex flex-col items-center justify-center text-center'>
                                 <div className='m-2'>
                                     <h3 className="text-2xl">Champion</h3>
                                     <p className="text-white text-xl">{FinalsJSON.podium.champion}</p>
