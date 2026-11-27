@@ -22,10 +22,8 @@ export function EoW2026() {
                         <p>#</p>
                         <p>Player</p>
                         <p>Racing Time</p>
-                        <a className='text-green-300 hover:text-green-400' href={VideoLinks.endyear2026} target='_blank'>
-                            Click here for watch the recording
-                        </a>
                     </RankingTable>
+                    <a className='text-green-300 hover:text-green-400' href={VideoLinks.endyear2026} target='_blank'> Click here for watch the recording </a>
                 </Details>
 
                 <Details title="1 - Rules">
