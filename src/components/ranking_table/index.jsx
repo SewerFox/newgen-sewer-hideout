@@ -45,29 +45,31 @@ export function RankingTable({ children, csvUrl, tableStyle, cols, allowSorting,
                             // Dropped-points system parsing
                             if (allowDropping > 0) {
                                 const playerName = playerResults[0]
+
                                 const playerEarnedPoints = playerResults.filter(point => typeof point === "number").sort((a, b) => b - a)
+
                                 const playerBadPositions /* Anything beyond the last loops could parse */ = playerResults.filter(
                                     (point) => typeof point === "string" && point !== playerName)
-                                const dropParsedPlayerResults = [playerName, ...playerEarnedPoints, ...playerBadPositions]
-                                let droppedPlayerResults = structuredClone(dropParsedPlayerResults)
 
-                                for (let i = 1; i <= allowDropping; i++)
+                                let droppedPlayerResults = [playerName, ...playerEarnedPoints, ...playerBadPositions]
+
+                                for (let i = 0; i <= allowDropping; i++) 
                                     droppedPlayerResults.pop()
 
-                                let sumOfPoints = droppedPlayerResults.reduce((acc, entry) => {
-                                    if (typeof (entry) != "number") {
-                                        return acc + 0
-                                    } else return acc + entry
+                                let sumOfPoints = droppedPlayerResults.reduce((entry, acc) => {
+                                    if (typeof (entry) != "number") return acc
+                                    else return acc + entry
                                 }, 0)
-                                sumOfPoints += Number(playerResults[13])
+
+                                sumOfPoints += Number(playerResults[1])
                                 data[i].push(sumOfPoints)
                             } else {
-                                let sumOfPoints = playerResults.reduce((acc, entry) => {
-                                    if (typeof (entry) != "number") {
-                                        return acc + 0
-                                    } else return acc + entry
+                                let sumOfPoints = playerResults.reduce((entry, acc) => {
+                                    if (typeof (entry) != "number") return acc
+                                    else return acc + entry
                                 }, 0)
-                                sumOfPoints += Number(playerResults[13])
+                                
+                                sumOfPoints += Number(playerResults[1])
                                 data[i].push(sumOfPoints)
                             }
                         }
