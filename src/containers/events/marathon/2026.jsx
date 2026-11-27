@@ -13,7 +13,7 @@ export function EoW2026() {
             <div className='mt-2.5 mb-2.5'>
                 <Details title="0 - Table ">
                     <RankingTable
-                        csvUrl={"https://raw.githubusercontent.com/SewerFox/newgen-sewer-hideout/39ff15a63385bada6fd3a0e3fc7ebc5f00c708ec/src/assets/results/eow26-results.csv"} 
+                        csvUrl={"https://raw.githubusercontent.com/SewerFox/newgen-sewer-hideout/refs/heads/main/src/assets/events/marathon/eow26-results.csv"} 
                         tableStyle={"ranking-single"}
                         allowSorting={false} allowDropping={0}
                         scoringSystem={[0]}

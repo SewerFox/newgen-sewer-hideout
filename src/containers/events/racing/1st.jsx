@@ -1,6 +1,6 @@
 import { HeaderWithImage, Details, RankingTable } from '../../../components'
 import Race1stLogo from "../../../assets/events/league/1ed/racing-logo.png"
-import FinalsJSON from "../../../assets/results/racingleague1st/finals-round.json"
+import FinalsJSON from "../../../assets/events/league/1ed/results/finals-round.json"
 
 export function RacingLeague1st() {
 
@@ -14,10 +14,10 @@ export function RacingLeague1st() {
                 <Details title="0 - League Overview ">
                     <div className='mb-5'>
                         <h2 className='font-bold text-xl mt-2.5 text-center'>Groups round</h2>
-                        <div className='grid md:grid-cols-5 text-center'>
+                        <div className='grid md:grid-cols-6 text-center'>
                             <div className='w-fit m-auto md:w-full'>
                                 <RankingTable
-                                    csvUrl={"https://raw.githubusercontent.com/SewerFox/newgen-sewer-hideout/refs/heads/main/src/assets/results/racingleague1st/groupA.csv"}
+                                    csvUrl={"https://raw.githubusercontent.com/SewerFox/newgen-sewer-hideout/refs/heads/main/src/assets/events/league/1ed/results/groupA.csv"}
                                     tableStyle={"ranking-single"}
                                     allowSorting={false} allowDropping={0}
                                     scoringSystem={[0]}
@@ -26,14 +26,15 @@ export function RacingLeague1st() {
                                     <p>Player</p>
                                     <p>Points</p>
                                 </RankingTable>
-
                                 <section className='w-11/12 md:w-11/12 m-auto mt-3 mb-3 overflow-x-auto border-2 border-green-600 rounded-md p-0.5 text-sm'>
                                     <a href=''><b>GROUP A</b> - 00/00/2027</a>
                                 </section>
                             </div>
+
+
                             <div className='w-fit m-auto md:w-full'>
                                 <RankingTable
-                                    csvUrl={"https://raw.githubusercontent.com/SewerFox/newgen-sewer-hideout/refs/heads/main/src/assets/results/racingleague1st/groupB.csv"}
+                                    csvUrl={"https://raw.githubusercontent.com/SewerFox/newgen-sewer-hideout/refs/heads/main/src/assets/events/league/1ed/results/groupB.csv"}
                                     tableStyle={"ranking-single"}
                                     allowSorting={false} allowDropping={0}
                                     scoringSystem={[0]}
@@ -42,14 +43,15 @@ export function RacingLeague1st() {
                                     <p>Player</p>
                                     <p>Points</p>
                                 </RankingTable>
-
                                 <section className='w-11/12 m-auto mt-3 mb-3 overflow-x-auto border-2 border-green-600 rounded-md p-0.5 text-sm'>
                                     <a href=''><b>GROUP B</b> - 00/00/2027</a>
                                 </section>
                             </div>
+
+
                             <div className='w-fit m-auto md:w-full'>
                                 <RankingTable
-                                    csvUrl={"https://raw.githubusercontent.com/SewerFox/newgen-sewer-hideout/refs/heads/main/src/assets/results/racingleague1st/groupC.csv"}
+                                    csvUrl={"https://raw.githubusercontent.com/SewerFox/newgen-sewer-hideout/refs/heads/main/src/assets/events/league/1ed/results/groupC.csv"}
                                     tableStyle={"ranking-single"}
                                     allowSorting={false} allowDropping={0}
                                     scoringSystem={[0]}
@@ -58,14 +60,15 @@ export function RacingLeague1st() {
                                     <p>Player</p>
                                     <p>Points</p>
                                 </RankingTable>
-
                                 <section className='w-11/12 m-auto mt-3 mb-3 overflow-x-auto border-2 border-green-600 rounded-md p-0.5 text-sm'>
                                     <a href=''><b>GROUP C</b> - 00/00/2027</a>
                                 </section>
                             </div>
+
+
                             <div className='w-fit m-auto md:w-full'>
                                 <RankingTable
-                                    csvUrl={"https://raw.githubusercontent.com/SewerFox/newgen-sewer-hideout/refs/heads/main/src/assets/results/racingleague1st/groupD.csv"}
+                                    csvUrl={"https://raw.githubusercontent.com/SewerFox/newgen-sewer-hideout/refs/heads/main/src/assets/events/league/1ed/results/groupD.csv"}
                                     tableStyle={"ranking-single"}
                                     allowSorting={false} allowDropping={0}
                                     scoringSystem={[0]}
@@ -74,14 +77,15 @@ export function RacingLeague1st() {
                                     <p>Player</p>
                                     <p>Points</p>
                                 </RankingTable>
-
                                 <section className='w-11/12 m-auto mt-3 mb-3 overflow-x-auto border-2 border-green-600 rounded-md p-0.5 text-sm'>
                                     <a href=''><b>GROUP D</b> - 00/00/2027</a>
                                 </section>
                             </div>
+
+
                             <div className='w-fit m-auto md:w-full'>
                                 <RankingTable
-                                    csvUrl={"https://raw.githubusercontent.com/SewerFox/newgen-sewer-hideout/refs/heads/main/src/assets/results/racingleague1st/groupE.csv"}
+                                    csvUrl={"https://raw.githubusercontent.com/SewerFox/newgen-sewer-hideout/refs/heads/main/src/assets/events/league/1ed/results/groupE.csv"}
                                     tableStyle={"ranking-single"}
                                     allowSorting={false} allowDropping={0}
                                     scoringSystem={[0]}
@@ -90,9 +94,25 @@ export function RacingLeague1st() {
                                     <p>Player</p>
                                     <p>Points</p>
                                 </RankingTable>
-
                                 <section className='w-11/12 m-auto mt-3 mb-3 overflow-x-auto border-2 border-green-600 rounded-md p-0.5 text-sm'>
                                     <a href=''><b>GROUP E</b> - 00/00/2027</a>
+                                </section>
+                            </div>
+
+
+                            <div className='w-fit m-auto md:w-full'>
+                                <RankingTable
+                                    csvUrl={"https://raw.githubusercontent.com/SewerFox/newgen-sewer-hideout/refs/heads/main/src/assets/events/league/1ed/results/groupF.csv"}
+                                    tableStyle={"ranking-single"}
+                                    allowSorting={false} allowDropping={0}
+                                    scoringSystem={[0]}
+                                >
+                                    <p>#</p>
+                                    <p>Player</p>
+                                    <p>Points</p>
+                                </RankingTable>
+                                <section className='w-11/12 m-auto mt-3 mb-3 overflow-x-auto border-2 border-green-600 rounded-md p-0.5 text-sm'>
+                                    <a href=''><b>GROUP F</b> - 00/00/2027</a>
                                 </section>
                             </div>
                         </div>
@@ -104,7 +124,7 @@ export function RacingLeague1st() {
                             <div className='md:w-fit border-2 border-gray-300 rounded-md p-2.5 flex flex-col items-center justify-center'>
                                 <a href='' className="font-bold text-center">Wild Cards Showdown - 00/00/2027</a>
                                 <RankingTable
-                                    csvUrl={"https://raw.githubusercontent.com/SewerFox/newgen-sewer-hideout/refs/heads/main/src/assets/results/racingleague1st/wild-cards.csv"}
+                                    csvUrl={"https://raw.githubusercontent.com/SewerFox/newgen-sewer-hideout/refs/heads/main/src/assets/events/league/1ed/results/wild-cards.csv"}
                                     tableStyle={"ranking-single"}
                                     allowSorting={false} allowDropping={0}
                                     scoringSystem={[0]}
