@@ -119,10 +119,9 @@ export function RankingTable({ children, csvUrl, tableStyle, cols, allowSorting,
         table.push(<p className={getPositionClass(i)}>{resultsTable[i][0]}</p>)
         table.push(<p className={getPositionClass(i)}>{resultsTable[i][pontuation]}</p>)
         if (tableStyle === "ranking-cols") {
-            for (let j = 1; j < children.length - 3; j++) {
+            for (let j = 1; j < children.length - 2; j++) {
                 table.push(<p className={getCellClass(resultsTable[i][j])}>{resultsTable[i][j]}</p>)
             }
-            table.push(<p>{resultsTable[i][13]}</p>)
         }
     }
 

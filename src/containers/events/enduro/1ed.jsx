@@ -21,6 +21,7 @@ export function Enduro1st() {
                         <p>#</p>
                         <p>Player</p>
                         <p>Points</p>
+                        <p>Added points</p>
                         <p>STK Enterprise</p>
                         <p>Cornfield Crossing</p>
                         <p>Lost Chasm</p>
@@ -33,7 +34,6 @@ export function Enduro1st() {
                         <p className="text-gray-400 font-extrabold">Green Valley (cancelled)</p>
                         <p>Antediluvian Abyss</p>
                         <p>Subsea</p>
-                        <p>Added points</p>
                     </RankingTable>
                     <div className='w-11/12 m-auto mt-3 mb-3 overflow-x-auto border-2 border-green-600 rounded-md p-2'>
                         <h4 className='font-bold text-lg'>Notes:</h4>
